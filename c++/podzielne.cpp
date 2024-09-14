@@ -9,11 +9,9 @@ int main(){
     cin >> koniec;
     cin >> dzielnik;
 
-    int podzielne = 0;
-    for(int i = poczatek; i <= koniec; i++){
-        if(i%dzielnik == 0)
-            podzielne++;
-    }
+    int podzielne = (koniec / dzielnik) - (poczatek / dzielnik);
 
+    if(poczatek % dzielnik == 0)
+        podzielne++;
     cout << podzielne;
 }
