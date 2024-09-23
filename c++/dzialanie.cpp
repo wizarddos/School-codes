@@ -16,13 +16,15 @@ int main(){
     }
      
     if(a * b == c){
-        cout << a << " * " << b <<  "== " << c << endl;  
+        cout << a << " * " << b <<  " == " << c << endl;  
     }
     
     if(b != 0){
         if(a / b == c){
             cout << a << " / " << b << " == " << c << endl;
-        }else if(a % b == c){
+        }
+        
+        if(a % b == c){
             cout << a << " % " << b << " == " << c << endl;
         }
     }

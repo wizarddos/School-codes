@@ -3,12 +3,13 @@
 using namespace std;
 
 int main(){
-    int kwota;
+    long long kwota;
 
     cin >> kwota;
 
 	if(kwota == 1){
 		cout<< "NO MONEY"<< endl;
+        return 0;
 	}
 
     int reszta = kwota % 3;
@@ -18,7 +19,7 @@ int main(){
     }else if(reszta == 2){
         cout << "1 " << kwota / 3;
     }else if(reszta == 1){
-        int n = kwota / 3;
+        int n = (kwota - 1) / 3;
 		cout << "2 " << n-1;
     }
 }

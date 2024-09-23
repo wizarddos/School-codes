@@ -3,14 +3,14 @@
 using namespace std;
 
 int main(){
-    int num;
-    char letter;
-    cin >> num >> letter;
+    string hexadecimal;
+    cin >> hexadecimal;
 
     int ascii = 0;
 
-    ascii = num * 16;
+    ascii = (hexadecimal[0] - '0') * 16;
 
+    char letter = hexadecimal[1];
     if(letter == 'A'){
         ascii = ascii + 10;
     }else if(letter == 'B'){
@@ -23,6 +23,8 @@ int main(){
         ascii = ascii + 14;
     }else if(letter == 'F'){
         ascii = ascii + 15;
+    }else{
+        ascii = ascii + (letter - '0');
     }
 
     cout << ascii << endl;
