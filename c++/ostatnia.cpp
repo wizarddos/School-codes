@@ -8,8 +8,10 @@ int main(){
     cin >> potega;
 
     int reszta = potega % 4;
-
-    if(reszta == 1){
+    
+    if(potega == 0){
+        cout << "1";   
+    }else if(reszta == 1){
         cout << "2" << endl;
     }else if(reszta == 2){
         cout << "4" << endl;
