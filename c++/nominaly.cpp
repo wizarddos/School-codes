@@ -13,7 +13,7 @@ int main(){
         cout << "0 " << kwota / 3;
     }else if(reszta == 2){
         cout << "1 " << kwota / 3;
-    }else{
-        cout << "NO MONEY";
+    }else if(reszta == 1){
+        int n = kwota / 3;
     }
 }
