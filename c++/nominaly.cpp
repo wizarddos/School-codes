@@ -19,7 +19,7 @@ int main(){
     }else if(reszta == 2){
         cout << "1 " << kwota / 3;
     }else if(reszta == 1){
-        int n = (kwota - 1) / 3;
+        long long n = (kwota - 1) / 3;
 		cout << "2 " << n-1;
     }
 }
